@@ -1,0 +1,8 @@
+#!/data/data/com.termux/files/usr/bin/bash
+if [ -f "/data/data/com.termux/files/home/.termux/termux.properties" ]; then
+exit 0
+fi
+echo "Installing default termux.properties to ~/.termux/"
+mkdir -p ~/.termux
+cp /data/data/com.termux/files/usr/share/examples/termux/termux.properties ~/.termux/
+exit 0

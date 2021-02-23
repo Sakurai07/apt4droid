@@ -1,0 +1,717 @@
+Package: libandroid-support
+Architecture: x86_64
+Installed-Size: 76
+Maintainer: Termux members @termux
+Version: 28
+Homepage: https://github.com/termux/libandroid-support
+Pre-Depends: dpkg (>= 1.19.4-3)
+Essential: yes
+Description: Library extending the Android C library (Bionic) for additional multibyte, locale and math support
+Status: install ok installed
+
+Package: libgmp
+Architecture: x86_64
+Installed-Size: 1264
+Maintainer: Termux members @termux
+Version: 6.2.1
+Homepage: https://gmplib.org/
+Breaks: libgmp-dev
+Replaces: libgmp-dev
+Description: Library for arbitrary precision arithmetic
+Status: install ok installed
+
+Package: libiconv
+Architecture: x86_64
+Installed-Size: 1152
+Maintainer: Fredrik Fornwall @fornwall
+Version: 1.16-3
+Homepage: https://www.gnu.org/software/libiconv/
+Breaks: libandroid-support (<= 24), libiconv-dev, libandroid-support-dev
+Replaces: libandroid-support (<= 24), libiconv-dev, libandroid-support-dev
+Description: An implementation of iconv()
+Status: install ok installed
+
+Package: coreutils
+Architecture: x86_64
+Installed-Size: 2548
+Maintainer: @termux
+Version: 8.32-7
+Homepage: https://www.gnu.org/software/coreutils/
+Breaks: chroot, busybox (<< 1.30.1-4)
+Depends: libandroid-support, libgmp, libiconv
+Essential: yes
+Replaces: chroot, busybox (<< 1.30.1-4)
+Description: Basic file, shell and text manipulation utilities from the GNU project
+Status: install ok installed
+
+Package: libbz2
+Architecture: x86_64
+Installed-Size: 116
+Maintainer: Termux members @termux
+Version: 1.0.8-6
+Homepage: http://www.bzip.org/
+Breaks: libbz2-dev
+Essential: yes
+Replaces: libbz2-dev
+Description: BZ2 format compression library
+Status: install ok installed
+
+Package: bzip2
+Architecture: x86_64
+Installed-Size: 128
+Maintainer: Termux members @termux
+Version: 1.0.8-6
+Homepage: http://www.bzip.org/
+Essential: yes
+Depends: libbz2 (= 1.0.8-6)
+Description: Tools for working with bzip2 compression
+Status: install ok installed
+
+Package: diffutils
+Architecture: x86_64
+Installed-Size: 576
+Maintainer: Termux members @termux
+Version: 3.7-3
+Homepage: https://www.gnu.org/software/diffutils/
+Depends: libiconv
+Essential: yes
+Description: Programs (cmp, diff, diff3 and sdiff) related to finding differences between files
+Status: install ok installed
+
+Package: gzip
+Architecture: x86_64
+Installed-Size: 332
+Maintainer: Termux members @termux
+Version: 1.10-4
+Homepage: https://www.gnu.org/software/gzip/
+Essential: yes
+Description: Standard GNU file compression utilities
+Status: install ok installed
+
+Package: ncurses
+Architecture: x86_64
+Installed-Size: 1572
+Maintainer: @termux
+Version: 6.2.20200725-2
+Homepage: https://invisible-island.net/ncurses/
+Breaks: ncurses-dev, ncurses-utils (<< 6.1.20190511-4)
+Replaces: ncurses-dev, ncurses-utils (<< 6.1.20190511-4)
+Description: Library for text-based user interfaces in a terminal-independent manner
+Status: install ok installed
+
+Package: less
+Architecture: x86_64
+Installed-Size: 264
+Maintainer: Termux members @termux
+Version: 563
+Homepage: http://www.greenwoodsoftware.com/less/
+Depends: ncurses
+Essential: yes
+Description: Terminal pager program used to view the contents of a text file one screen at a time
+Status: install ok installed
+
+Package: liblzma
+Architecture: x86_64
+Installed-Size: 612
+Maintainer: Fredrik Fornwall @fornwall
+Version: 5.2.5-1
+Homepage: https://tukaani.org/xz/
+Breaks: liblzma-dev
+Essential: yes
+Replaces: liblzma-dev
+Description: XZ-format compression library
+Status: install ok installed
+
+Package: libandroid-glob
+Architecture: x86_64
+Installed-Size: 68
+Maintainer: Termux members @termux
+Version: 0.6-2
+Homepage: https://man7.org/linux/man-pages/man3/glob.3.html
+Breaks: libandroid-glob-dev
+Replaces: libandroid-glob-dev
+Description: Shared library for the glob(3) system function
+Status: install ok installed
+
+Package: tar
+Architecture: x86_64
+Installed-Size: 1216
+Maintainer: @termux
+Version: 1.34
+Homepage: https://www.gnu.org/software/tar/
+Depends: libandroid-glob, libiconv
+Essential: yes
+Description: GNU tar for manipulating tar archives
+Status: install ok installed
+
+Package: xz-utils
+Architecture: x86_64
+Installed-Size: 216
+Maintainer: Fredrik Fornwall @fornwall
+Version: 5.2.5-1
+Homepage: https://tukaani.org/xz/
+Essential: yes
+Depends: liblzma (= 5.2.5-1)
+Description: XZ-format compression tools
+Status: install ok installed
+
+Package: zlib
+Architecture: x86_64
+Installed-Size: 264
+Maintainer: Termux members @termux
+Version: 1.2.11-5
+Homepage: https://www.zlib.net/
+Breaks: ndk-sysroot (<< 19b-3), zlib-dev
+Replaces: ndk-sysroot (<< 19b-3), zlib-dev
+Description: Compression library implementing the deflate compression method found in gzip and PKZIP
+Status: install ok installed
+
+Package: dpkg
+Architecture: x86_64
+Installed-Size: 1256
+Maintainer: @termux
+Version: 1.20.7.1-1
+Homepage: https://packages.debian.org/dpkg
+Breaks: dpkg-dev
+Depends: bzip2, coreutils, diffutils, gzip, less, libbz2, liblzma, tar, xz-utils, zlib
+Essential: yes
+Replaces: dpkg-dev
+Description: Debian package management system
+Status: install ok installed
+
+Package: findutils
+Architecture: x86_64
+Installed-Size: 848
+Maintainer: @termux
+Version: 4.8.0
+Homepage: https://www.gnu.org/software/findutils/
+Depends: libandroid-support
+Essential: yes
+Description: Utilities to find files meeting specified criteria and perform various actions on the files which are found
+Status: install ok installed
+
+Package: libgpg-error
+Architecture: x86_64
+Installed-Size: 556
+Maintainer: @termux
+Version: 1.41
+Homepage: https://www.gnupg.org/related_software/libgpg-error/
+Breaks: libgpg-error-dev
+Replaces: libgpg-error-dev
+Description: Small library that defines common error values for all GnuPG components
+Status: install ok installed
+
+Package: libgcrypt
+Architecture: x86_64
+Installed-Size: 1336
+Maintainer: @termux
+Version: 1.9.1
+Homepage: https://www.gnu.org/software/libgcrypt/
+Breaks: libgcrypt-dev
+Depends: libgpg-error
+Replaces: libgcrypt-dev
+Description: General purpose cryptographic library based on the code from GnuPG
+Status: install ok installed
+
+Package: gpgv
+Architecture: x86_64
+Installed-Size: 424
+Maintainer: @termux
+Version: 2.2.27-1
+Homepage: https://www.gnupg.org/
+Depends: libbz2, libgcrypt, libgpg-error, zlib
+Description: GNU privacy guard - signature verification tool
+Status: install ok installed
+
+Package: pcre
+Architecture: x86_64
+Installed-Size: 2776
+Maintainer: Termux members @termux
+Version: 8.44-1
+Homepage: https://www.pcre.org
+Breaks: pcre-dev
+Replaces: pcre-dev
+Description: Library implementing regular expression pattern matching using the same syntax and semantics as Perl 5
+Status: install ok installed
+
+Package: grep
+Architecture: x86_64
+Installed-Size: 388
+Maintainer: Termux members @termux
+Version: 3.6
+Homepage: https://www.gnu.org/software/grep/
+Depends: libandroid-support, pcre
+Essential: yes
+Description: Command which searches one or more input files for lines containing a match to a specified pattern
+Status: install ok installed
+
+Package: libc++
+Architecture: x86_64
+Installed-Size: 1008
+Maintainer: Termux members @termux
+Version: 21d-1
+Homepage: https://libcxx.llvm.org/
+Essential: yes
+Description: C++ Standard Library
+Status: install ok installed
+
+Package: libnghttp2
+Architecture: x86_64
+Installed-Size: 472
+Maintainer: @termux
+Version: 1.43.0
+Homepage: https://nghttp2.org/
+Breaks: libnghttp2-dev
+Replaces: libnghttp2-dev
+Description: nghttp HTTP 2.0 library
+Status: install ok installed
+
+Package: ca-certificates
+Architecture: all
+Installed-Size: 248
+Maintainer: @termux
+Version: 20210125
+Homepage: https://curl.haxx.se/docs/caextract.html
+Description: Common CA certificates
+Status: install ok installed
+
+Package: openssl
+Architecture: x86_64
+Installed-Size: 4888
+Maintainer: Termux members @termux
+Version: 1.1.1i
+Homepage: https://www.openssl.org/
+Breaks: openssl-tool (<< 1.1.1b-1), openssl-dev
+Depends: ca-certificates, zlib
+Conflicts: libcurl (<< 7.61.0-1)
+Replaces: openssl-tool (<< 1.1.1b-1), openssl-dev
+Description: Library implementing the SSL and TLS protocols as well as general purpose cryptography functions
+Status: install ok installed
+
+Package: libssh2
+Architecture: x86_64
+Installed-Size: 1072
+Maintainer: Termux members @termux
+Version: 1.9.0-2
+Homepage: https://www.libssh2.org
+Breaks: libssh2-dev
+Depends: openssl, zlib
+Replaces: libssh2-dev
+Description: Client-side library implementing the SSH2 protocol
+Status: install ok installed
+
+Package: libcurl
+Architecture: x86_64
+Installed-Size: 2748
+Maintainer: @termux
+Version: 7.75.0-1
+Homepage: https://curl.haxx.se/
+Breaks: libcurl-dev
+Depends: libnghttp2, libssh2, openssl (>= 1.1.1), zlib
+Essential: yes
+Conflicts: apt (<< 1.4.8-8)
+Replaces: libcurl-dev
+Description: Easy-to-use client-side URL transfer library
+Status: install ok installed
+
+Package: libnettle
+Architecture: x86_64
+Installed-Size: 1308
+Maintainer: @termux
+Version: 3.7
+Homepage: https://www.lysator.liu.se/~nisse/nettle/
+Breaks: libnettle-dev
+Depends: libgmp
+Replaces: libnettle-dev
+Description: Cryptographic library that is designed to fit easily in more or less any context
+Status: install ok installed
+
+Package: libunistring
+Architecture: x86_64
+Installed-Size: 2788
+Maintainer: Termux members @termux
+Version: 0.9.10-4
+Homepage: https://www.gnu.org/software/libunistring/
+Breaks: libunistring-dev
+Depends: libandroid-support, libiconv
+Replaces: libunistring-dev
+Description: Library providing functions for manipulating Unicode strings
+Status: install ok installed
+
+Package: libidn2
+Architecture: x86_64
+Installed-Size: 392
+Maintainer: Termux members @termux
+Version: 2.3.0-2
+Homepage: https://www.gnu.org/software/libidn/#libidn2
+Breaks: libidn2-dev
+Depends: libunistring, libandroid-support
+Replaces: libidn2-dev
+Description: Free software implementation of IDNA2008, Punycode and TR46
+Status: install ok installed
+
+Package: libgnutls
+Architecture: x86_64
+Installed-Size: 9188
+Maintainer: Termux members @termux
+Version: 3.6.15
+Homepage: https://www.gnutls.org/
+Breaks: libgnutls-dev
+Depends: libgmp, libnettle, ca-certificates, libidn2, libunistring
+Replaces: libgnutls-dev
+Description: Secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them
+Status: install ok installed
+
+Package: liblz4
+Architecture: x86_64
+Installed-Size: 332
+Maintainer: Termux members @termux
+Version: 1.9.3
+Homepage: https://lz4.github.io/lz4/
+Breaks: liblz4-dev
+Replaces: liblz4-dev
+Description: Fast LZ compression algorithm library
+Status: install ok installed
+
+Package: sed
+Architecture: x86_64
+Installed-Size: 412
+Maintainer: Termux members @termux
+Version: 4.8-1
+Homepage: https://www.gnu.org/software/sed/
+Essential: yes
+Description: GNU stream editor for filtering/transforming text
+Status: install ok installed
+
+Package: termux-licenses
+Architecture: all
+Installed-Size: 372
+Maintainer: Termux members @termux
+Version: 2.0-1
+Homepage: https://termux.com
+Essential: yes
+Description: Contains LICENSE files for common licenses
+Status: install ok installed
+
+Package: xxhash
+Architecture: x86_64
+Installed-Size: 332
+Maintainer: @termux
+Version: 0.8.0-1
+Homepage: https://cyan4973.github.io/xxHash/
+Description: Extremely fast non-cryptographic hash algorithm
+Status: install ok installed
+
+Package: apt
+Architecture: x86_64
+Installed-Size: 4192
+Maintainer: @termux
+Version: 2.1.18
+Homepage: https://packages.debian.org/apt
+Depends: coreutils, dpkg, findutils, gpgv, grep, libandroid-glob, libbz2, libc++, libcurl, libgnutls, liblz4, liblzma, sed, termux-licenses, xxhash, zlib
+Essential: yes
+Conflicts: apt-transport-https, libapt-pkg
+Recommends: game-repo, science-repo
+Replaces: apt-transport-https, libapt-pkg
+Suggests: gnupg, unstable-repo, x11-repo
+Description: Front-end for the dpkg package manager
+Status: install ok installed
+
+Package: termux-keyring
+Architecture: all
+Installed-Size: 88
+Maintainer: Termux members @termux
+Version: 1.4
+Homepage: https://github.com/termux
+Description: GPG public keys for the official Termux repositories
+Status: install ok installed
+
+Package: game-repo
+Architecture: all
+Installed-Size: 52
+Maintainer: Henrik Grimler @Grimler91
+Version: 1.3
+Homepage: https://github.com/termux/game-packages
+Depends: termux-keyring
+Description: Package repository containing games for termux
+Status: install ok installed
+
+Package: science-repo
+Architecture: all
+Installed-Size: 52
+Maintainer: Henrik Grimler @Grimler91
+Version: 1.2
+Homepage: https://github.com/termux/science-packages
+Depends: termux-keyring
+Description: Package repository containing science software
+Status: install ok installed
+
+Package: readline
+Architecture: x86_64
+Installed-Size: 1104
+Maintainer: Termux members @termux
+Version: 8.1.0
+Homepage: https://tiswww.case.edu/php/chet/readline/rltop.html
+Breaks: bash (<< 5.0), readline-dev
+Depends: libandroid-support, ncurses
+Replaces: readline-dev
+Description: Library that allow users to edit command lines as they are typed in
+Status: install ok installed
+
+Package: curl
+Architecture: x86_64
+Installed-Size: 328
+Maintainer: @termux
+Version: 7.75.0-1
+Homepage: https://curl.haxx.se/
+Essential: yes
+Depends: libcurl (= 7.75.0-1)
+Description: Command line tool for transferring data with URL syntax
+Status: install ok installed
+
+Package: dash
+Architecture: x86_64
+Installed-Size: 184
+Maintainer: @termux
+Version: 0.5.11.3
+Homepage: http://gondor.apana.org.au/~herbert/dash/
+Essential: yes
+Description: Small POSIX-compliant implementation of /bin/sh
+Status: install ok installed
+
+Package: libmpfr
+Architecture: x86_64
+Installed-Size: 1020
+Maintainer: Termux members @termux
+Version: 4.1.0
+Homepage: https://www.mpfr.org/
+Breaks: libmpfr-dev
+Depends: libgmp
+Replaces: libmpfr-dev
+Description: C library for multiple-precision floating-point computations with correct rounding
+Status: install ok installed
+
+Package: gawk
+Architecture: x86_64
+Installed-Size: 2944
+Maintainer: Termux members @termux
+Version: 5.1.0-1
+Homepage: https://www.gnu.org/software/gawk/
+Breaks: gawk-dev
+Depends: libandroid-support, libgmp, libmpfr, readline
+Essential: yes
+Replaces: gawk-dev
+Description: Programming language designed for text processing
+Status: install ok installed
+
+Package: procps
+Architecture: x86_64
+Installed-Size: 700
+Maintainer: Termux members @termux
+Version: 3.3.16-2
+Homepage: https://gitlab.com/procps-ng/procps
+Breaks: procps-dev
+Depends: ncurses
+Essential: yes
+Replaces: procps-dev
+Description: Utilities that give information about processes using the /proc filesystem
+Status: install ok installed
+
+Package: psmisc
+Architecture: x86_64
+Installed-Size: 184
+Maintainer: @termux
+Version: 23.4
+Homepage: https://gitlab.com/psmisc/psmisc
+Depends: ncurses
+Essential: yes
+Description: Some small useful utilities that use the proc filesystem
+Status: install ok installed
+
+Package: termux-am
+Architecture: all
+Installed-Size: 72
+Maintainer: Michal Bednarski @michalbednarski
+Version: 0.4
+Homepage: https://github.com/termux/TermuxAm
+Conflicts: termux-tools (<< 0.51)
+Description: Android Oreo-compatible am command reimplementation
+Status: install ok installed
+
+Package: termux-exec
+Architecture: x86_64
+Installed-Size: 52
+Maintainer: Termux members @termux
+Version: 1:0.8
+Homepage: https://github.com/termux/termux-exec
+Essential: yes
+Description: An execve() wrapper to make /bin and /usr/bin shebangs work
+Status: install ok installed
+
+Package: libcrypt
+Architecture: x86_64
+Installed-Size: 72
+Maintainer: Termux members @termux
+Version: 0.2-3
+Homepage: http://michael.dipperstein.com/crypt/
+Breaks: libcrypt-dev
+Depends: openssl
+Replaces: libcrypt-dev
+Description: A crypt(3) implementation
+Status: install ok installed
+
+Package: util-linux
+Architecture: x86_64
+Installed-Size: 3940
+Maintainer: Termux members @termux
+Version: 2.36.1
+Homepage: https://en.wikipedia.org/wiki/Util-linux
+Breaks: util-linux-dev
+Depends: ncurses, libcrypt, zlib
+Essential: yes
+Replaces: util-linux-dev
+Description: Miscellaneous system utilities
+Status: install ok installed
+
+Package: dialog
+Architecture: x86_64
+Installed-Size: 288
+Maintainer: @termux
+Version: 1.3-20210117-0
+Homepage: https://invisible-island.net/dialog/
+Depends: ncurses
+Description: Application used in shell scripts which displays text user interface widgets
+Status: install ok installed
+
+Package: termux-tools
+Architecture: all
+Installed-Size: 196
+Maintainer: @termux
+Version: 0.111
+Homepage: https://termux.com/
+Depends: bzip2, coreutils, curl, dash, diffutils, findutils, gawk, grep, gzip, less, procps, psmisc, sed, tar, termux-am, termux-exec, util-linux, xz-utils, dialog
+Essential: yes
+Conflicts: procps (<< 3.3.15-2)
+Recommends: ed, dos2unix, inetutils, net-tools, patch, unzip
+Suggests: termux-api
+Description: Basic system tools for Termux
+Status: install ok installed
+
+Package: bash
+Architecture: x86_64
+Installed-Size: 4128
+Maintainer: @termux
+Version: 5.1.4
+Homepage: https://www.gnu.org/software/bash/
+Breaks: bash-dev
+Depends: libandroid-support, libiconv, ncurses, readline (>= 8.0), termux-tools
+Essential: yes
+Recommends: command-not-found
+Replaces: bash-dev
+Description: A sh-compatible shell that incorporates useful features from the Korn shell (ksh) and C shell (csh)
+Status: install ok installed
+
+Package: command-not-found
+Architecture: x86_64
+Installed-Size: 440
+Maintainer: Termux members @termux
+Version: 1.60
+Homepage: https://github.com/termux/command-not-found
+Description: Suggest installation of packages in interactive shell sessions
+Status: install ok installed
+
+Package: ed
+Architecture: x86_64
+Installed-Size: 172
+Maintainer: Oliver Schmidhauser @Neo-Oli
+Version: 1.17
+Homepage: https://www.gnu.org/software/ed/
+Description: Classic UNIX line editor
+Status: install ok installed
+
+Package: debianutils
+Architecture: x86_64
+Installed-Size: 132
+Maintainer: Termux members @termux
+Version: 4.11.2
+Homepage: https://packages.debian.org/debianutils
+Description: Small utilities which are used primarily by the installation scripts of Debian packages
+Status: install ok installed
+
+Package: dos2unix
+Architecture: x86_64
+Installed-Size: 344
+Maintainer: Termux members @termux
+Version: 7.4.2
+Homepage: https://waterlan.home.xs4all.nl/dos2unix.html
+Depends: libandroid-support
+Description: Converts between DOS and Unix text files
+Status: install ok installed
+
+Package: inetutils
+Architecture: x86_64
+Installed-Size: 1228
+Maintainer: Termux members @termux
+Version: 1.9.4-10
+Homepage: https://www.gnu.org/software/inetutils/
+Depends: readline
+Description: Collection of common network programs
+Status: install ok installed
+
+Package: libtirpc
+Architecture: x86_64
+Installed-Size: 544
+Maintainer: Termux members @termux
+Version: 1.3.1
+Homepage: http://git.linux-nfs.org/?p=steved/libtirpc.git
+Description: Transport Independent RPC library
+Status: install ok installed
+
+Package: lsof
+Architecture: x86_64
+Installed-Size: 260
+Maintainer: Termux members @termux
+Version: 4.94.0
+Homepage: https://github.com/lsof-org/lsof
+Depends: libandroid-support, libtirpc
+Description: Lists open files for running Unix processes
+Status: install ok installed
+
+Package: nano
+Architecture: x86_64
+Installed-Size: 900
+Maintainer: @termux
+Version: 5.5
+Homepage: https://www.nano-editor.org/
+Depends: libandroid-support, libandroid-glob, ncurses
+Description: Small, free and friendly text editor
+Status: install ok installed
+
+Package: net-tools
+Architecture: x86_64
+Installed-Size: 604
+Maintainer: @termux
+Version: 2.10.0
+Homepage: http://net-tools.sourceforge.net/
+Description: Configuration tools for Linux networking
+Status: install ok installed
+
+Package: patch
+Architecture: x86_64
+Installed-Size: 272
+Maintainer: Fredrik Fornwall @fornwall
+Version: 2.7.6-3
+Homepage: https://savannah.gnu.org/projects/patch/
+Description: GNU patch which applies diff files to create patched files
+Status: install ok installed
+
+Package: unzip
+Architecture: x86_64
+Installed-Size: 344
+Maintainer: Termux members @termux
+Version: 6.0-7
+Homepage: https://sourceforge.net/projects/infozip/
+Depends: libbz2
+Description: Tools for working with zip files
+Status: install ok installed
+

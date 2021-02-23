@@ -1,0 +1,11 @@
+0417fa81f93a59db2894b2bf749f68d1  data/data/com.termux/files/usr/share/man/man1/prtstat.1.gz
+ffa827fe5277a9ca38128fab5148fb34  data/data/com.termux/files/usr/share/man/man1/killall.1.gz
+4e6ced7ace631144cbb43913dc4bf38f  data/data/com.termux/files/usr/share/man/man1/pslog.1.gz
+e036911c8249e23fd11b7537a80a849e  data/data/com.termux/files/usr/share/man/man1/peekfd.1.gz
+9932fbbb9004a64330ed36515b32a5ec  data/data/com.termux/files/usr/share/man/man1/fuser.1.gz
+76d2361008170bbc208e0fd5a20c2a2c  data/data/com.termux/files/usr/share/man/man1/pstree.1.gz
+b9beac99399de780a2b45c2d69e734f8  data/data/com.termux/files/usr/bin/pslog
+512aa17054b4caf9993727380528bdad  data/data/com.termux/files/usr/bin/fuser
+63d7b8d543519903757fc4623c4f4226  data/data/com.termux/files/usr/bin/pstree
+9f0b1a0e1f27bcfe7397c59f63e427e5  data/data/com.termux/files/usr/bin/prtstat
+88613e28d9bb161e712d4b1bf6f9cbea  data/data/com.termux/files/usr/bin/killall

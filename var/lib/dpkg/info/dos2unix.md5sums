@@ -1,0 +1,13 @@
+d55ee1feedc2020ce4d8265ca0b92a5f  data/data/com.termux/files/usr/share/man/man1/dos2unix.1.gz
+e3526ff1b3f0bd20943924a4e38c7ca7  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/INSTALL.txt
+b0980948d557527ccaab257a1e4b7ce5  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/ChangeLog.txt
+df62358c7d5ff9bab8af696d753deff1  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/dos2unix.htm
+7ac69951f4d598ec8bfa581363b835d7  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/dos2unix.txt
+999fdf720d3a9ae0d88a20e7fa276acc  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/README.txt
+1d239efab616bfcec65968b13d19140c  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/BUGS.txt
+f1a19ceab34ee8c899bafca6bb5a5be1  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/NEWS.txt
+c44d6f182e28db0216cfc160071761f1  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/TODO.txt
+8a7c3499a1142df819e727253cd53a12  data/data/com.termux/files/usr/share/doc/dos2unix-7.4.2/COPYING.txt
+8a7c3499a1142df819e727253cd53a12  data/data/com.termux/files/usr/share/doc/dos2unix/COPYING.txt
+265dabac5c70f7b08e83a96dfa613d1b  data/data/com.termux/files/usr/bin/unix2dos
+df5ed08fbd4e600d7a38c3736c004cea  data/data/com.termux/files/usr/bin/dos2unix
