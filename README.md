@@ -29,4 +29,4 @@ chmod +x nosuinst
 # Status
 
 Currently running on termux's repository
-edit /etc/sources/ as seen fit
+edit /etc/apt/sources.list as seen fit
