@@ -26,3 +26,7 @@ chmod +x nosuinst
 ./nosuinst
 ```
 
+# Status
+
+Currently running on termux's repository
+edit /etc/sources/ as seen fit
