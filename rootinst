@@ -1,3 +1,5 @@
+su
+clear
 echo "APT4DROID INSTALLER"
 echo "by sakurai07"
 echo "#############################"
@@ -10,8 +12,8 @@ echo "3. github"
 
     read -p "Please choose: " 123
     case $yn in
-        [1]* ) bash rootinst.sh
-        [2]* ) bash rootuninst.sh
+        [1]* ) sudo bash rootinst.sh
+        [2]* ) sudo bash rootuninst.sh
         [3]* ) echo "https://github.com/sakurai07/apt4droid";;
         * ) echo "";;
     esac
