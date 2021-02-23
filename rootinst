@@ -1,0 +1,18 @@
+echo "APT4DROID INSTALLER"
+echo "by sakurai07"
+echo "#############################"
+echo ""
+echo "1. install as root"
+echo "2. uninstall (beta)"
+echo "3. github"
+
+
+
+    read -p "Please choose: " 123
+    case $yn in
+        [1]* ) bash rootinst.sh
+        [2]* ) bash root uninst.sh
+        [3]* ) echo "https://github.com/sakurai07/apt4droid";;
+        * ) echo "";;
+    esac
+done
